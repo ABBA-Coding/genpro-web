@@ -1,0 +1,78 @@
+[09-Oct-2024 18:42:35 UTC] PHP Fatal error:  Uncaught TypeError: array_diff(): Argument #2 must be of type array, bool given in /home/websizeu/public_html/wp-content/plugins/sitepress-multilingual-cms/vendor/otgs/installer/includes/upgrade/AutoUpgrade.php:39
+Stack trace:
+#0 /home/websizeu/public_html/wp-content/plugins/sitepress-multilingual-cms/vendor/otgs/installer/includes/upgrade/AutoUpgrade.php(39): array_diff()
+#1 /home/websizeu/public_html/wp-includes/class-wp-hook.php(326): OTGS\Installer\Upgrade\AutoUpgrade->modifyAutoUpdatePluginsOption()
+#2 /home/websizeu/public_html/wp-includes/plugin.php(205): WP_Hook->apply_filters()
+#3 /home/websizeu/public_html/wp-includes/option.php(2340): apply_filters()
+#4 /home/websizeu/public_html/wp-includes/option.php(1936): update_network_option()
+#5 /home/websizeu/public_html/wp-admin/includes/ajax-actions.php(5601): update_site_option()
+#6 /home/websizeu/public_html/wp-includes/class-wp-hook.php(324): wp_ajax_toggle_auto_updates()
+#7 /home/websizeu/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#8 /home/websizeu/public_html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#9 /home/websizeu/public_html/wp-admin/admin-ajax.php(192): do_action()
+#10 {main}
+  thrown in /home/websizeu/public_html/wp-content/plugins/sitepress-multilingual-cms/vendor/otgs/installer/includes/upgrade/AutoUpgrade.php on line 39
+[09-Oct-2024 18:42:37 UTC] PHP Fatal error:  Uncaught TypeError: array_diff(): Argument #2 must be of type array, bool given in /home/websizeu/public_html/wp-content/plugins/sitepress-multilingual-cms/vendor/otgs/installer/includes/upgrade/AutoUpgrade.php:39
+Stack trace:
+#0 /home/websizeu/public_html/wp-content/plugins/sitepress-multilingual-cms/vendor/otgs/installer/includes/upgrade/AutoUpgrade.php(39): array_diff()
+#1 /home/websizeu/public_html/wp-includes/class-wp-hook.php(326): OTGS\Installer\Upgrade\AutoUpgrade->modifyAutoUpdatePluginsOption()
+#2 /home/websizeu/public_html/wp-includes/plugin.php(205): WP_Hook->apply_filters()
+#3 /home/websizeu/public_html/wp-includes/option.php(2340): apply_filters()
+#4 /home/websizeu/public_html/wp-includes/option.php(1936): update_network_option()
+#5 /home/websizeu/public_html/wp-admin/includes/ajax-actions.php(5601): update_site_option()
+#6 /home/websizeu/public_html/wp-includes/class-wp-hook.php(324): wp_ajax_toggle_auto_updates()
+#7 /home/websizeu/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#8 /home/websizeu/public_html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#9 /home/websizeu/public_html/wp-admin/admin-ajax.php(192): do_action()
+#10 {main}
+  thrown in /home/websizeu/public_html/wp-content/plugins/sitepress-multilingual-cms/vendor/otgs/installer/includes/upgrade/AutoUpgrade.php on line 39
+[09-Oct-2024 18:42:39 UTC] PHP Fatal error:  Uncaught TypeError: array_diff(): Argument #2 must be of type array, bool given in /home/websizeu/public_html/wp-content/plugins/sitepress-multilingual-cms/vendor/otgs/installer/includes/upgrade/AutoUpgrade.php:39
+Stack trace:
+#0 /home/websizeu/public_html/wp-content/plugins/sitepress-multilingual-cms/vendor/otgs/installer/includes/upgrade/AutoUpgrade.php(39): array_diff()
+#1 /home/websizeu/public_html/wp-includes/class-wp-hook.php(326): OTGS\Installer\Upgrade\AutoUpgrade->modifyAutoUpdatePluginsOption()
+#2 /home/websizeu/public_html/wp-includes/plugin.php(205): WP_Hook->apply_filters()
+#3 /home/websizeu/public_html/wp-includes/option.php(2340): apply_filters()
+#4 /home/websizeu/public_html/wp-includes/option.php(1936): update_network_option()
+#5 /home/websizeu/public_html/wp-admin/includes/ajax-actions.php(5601): update_site_option()
+#6 /home/websizeu/public_html/wp-includes/class-wp-hook.php(324): wp_ajax_toggle_auto_updates()
+#7 /home/websizeu/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#8 /home/websizeu/public_html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#9 /home/websizeu/public_html/wp-admin/admin-ajax.php(192): do_action()
+#10 {main}
+  thrown in /home/websizeu/public_html/wp-content/plugins/sitepress-multilingual-cms/vendor/otgs/installer/includes/upgrade/AutoUpgrade.php on line 39
+[09-Oct-2024 19:01:54 UTC] PHP Warning:  require_once(/home/websizeu/public_html/wp-content/themes/gen-pro/class-wp-bootstrap-navwalker.php): Failed to open stream: No such file or directory in /home/websizeu/public_html/wp-content/themes/gen-pro/functions.php on line 210
+[09-Oct-2024 19:01:54 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/websizeu/public_html/wp-content/themes/gen-pro/class-wp-bootstrap-navwalker.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/websizeu/public_html/wp-content/themes/gen-pro/functions.php:210
+Stack trace:
+#0 /home/websizeu/public_html/wp-settings.php(668): include()
+#1 /home/websizeu/public_html/wp-config.php(96): require_once('/home/websizeu/...')
+#2 /home/websizeu/public_html/wp-load.php(50): require_once('/home/websizeu/...')
+#3 /home/websizeu/public_html/wp-admin/admin-ajax.php(22): require_once('/home/websizeu/...')
+#4 {main}
+  thrown in /home/websizeu/public_html/wp-content/themes/gen-pro/functions.php on line 210
+[09-Oct-2024 19:02:01 UTC] PHP Warning:  require_once(/home/websizeu/public_html/wp-content/themes/gen-pro/class-wp-bootstrap-navwalker.php): Failed to open stream: No such file or directory in /home/websizeu/public_html/wp-content/themes/gen-pro/functions.php on line 210
+[09-Oct-2024 19:02:01 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/websizeu/public_html/wp-content/themes/gen-pro/class-wp-bootstrap-navwalker.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/websizeu/public_html/wp-content/themes/gen-pro/functions.php:210
+Stack trace:
+#0 /home/websizeu/public_html/wp-settings.php(668): include()
+#1 /home/websizeu/public_html/wp-config.php(96): require_once('/home/websizeu/...')
+#2 /home/websizeu/public_html/wp-load.php(50): require_once('/home/websizeu/...')
+#3 /home/websizeu/public_html/wp-admin/admin.php(34): require_once('/home/websizeu/...')
+#4 /home/websizeu/public_html/wp-admin/nav-menus.php(13): require_once('/home/websizeu/...')
+#5 {main}
+  thrown in /home/websizeu/public_html/wp-content/themes/gen-pro/functions.php on line 210
+[09-Oct-2024 19:41:57 UTC] PHP Parse error:  syntax error, unexpected single-quoted string "_19", expecting ")" in /home/websizeu/public_html/wp-content/themes/gen-pro/inc/class-wp-bootstrap-navwalker.php on line 279
+[12-Oct-2024 12:45:44 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function PHPMailer\PHPMailer\mail() in /home/websizeu/public_html/wp-includes/PHPMailer/PHPMailer.php:881
+Stack trace:
+#0 /home/websizeu/public_html/wp-includes/PHPMailer/PHPMailer.php(1972): PHPMailer\PHPMailer\PHPMailer->mailPassthru()
+#1 /home/websizeu/public_html/wp-includes/PHPMailer/PHPMailer.php(1693): PHPMailer\PHPMailer\PHPMailer->mailSend()
+#2 /home/websizeu/public_html/wp-includes/PHPMailer/PHPMailer.php(1525): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /home/websizeu/public_html/wp-includes/pluggable.php(546): PHPMailer\PHPMailer\PHPMailer->send()
+#4 /home/websizeu/public_html/wp-includes/pluggable.php(2194): wp_mail()
+#5 /home/websizeu/public_html/wp-includes/user.php(3503): wp_new_user_notification()
+#6 /home/websizeu/public_html/wp-includes/class-wp-hook.php(324): wp_send_new_user_notifications()
+#7 /home/websizeu/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#8 /home/websizeu/public_html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#9 /home/websizeu/public_html/wp-admin/includes/user.php(247): do_action()
+#10 /home/websizeu/public_html/wp-admin/user-new.php(195): edit_user()
+#11 {main}
+  thrown in /home/websizeu/public_html/wp-includes/PHPMailer/PHPMailer.php on line 881
+[12-Oct-2024 12:52:30 UTC] PHP Warning:  wp_update_themes(): Произошла непредвиденная ошибка. Возможно, что-то не так с сайтом WordPress.org или с настройками вашего сервера. Если проблема не решится, обратитесь на <a href="https://ru.wordpress.org/support/forums/">форумы поддержки</a>. (Не удалось установить защищённое соединение с WordPress.org. Пожалуйста, свяжитесь с администратором сервера.) in /home/websizeu/public_html/wp-includes/functions.php on line 6085

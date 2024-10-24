@@ -1,0 +1,147 @@
+$input-height-border: 2px; // это значение можно адаптировать по необходимости
+$input-border-width: 1px; // толщина бордера для input
+$input-bg: #fff; // цвет фона для input
+$input-border-radius: .25rem; // радиус скругления для input
+$input-disabled-bg: #e9ecef; // цвет фона для disabled input
+$gray-600: #6c757d; // цвет для disabled label
+$prefix: "bs"; // префикс для переменных, можно изменить на другой, если используется другой префикс
+
+
+
+$form-floating-height: 40px;
+$form-floating-line-height: 1.25;
+$form-floating-padding-x: 20px;
+$form-floating-padding-y: 12px;
+$form-floating-input-padding-t: 1.625rem;
+$form-floating-input-padding-b: .625rem;
+$form-floating-label-height: 1.5em;
+$form-floating-label-opacity: .65;
+$form-floating-label-transform: scale(.75) translateY(-.125rem) translateX(.5rem);
+$form-floating-label-disabled-color: $gray-600;
+$form-floating-transition: opacity .1s ease-in-out, transform .1s ease-in-out;
+
+@mixin transition($transitions...) {
+    transition: $transitions;
+}
+
+@mixin border-radius($radius) {
+    border-radius: $radius;
+}
+
+
+.form-floating {
+    position: relative;
+
+    >.form-control,
+    >.form-control-plaintext,
+    >.form-select {
+        height: $form-floating-height;
+        min-height: $form-floating-height;
+        line-height: $form-floating-line-height;
+        background: #fff;
+        border-radius: 30px;
+        font-size: 14px;
+        color: #006D6F;
+        border: 0;
+    }
+
+    >label {
+        line-height: 1.2;
+        font-size: 14px;
+        color: #006D6F;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        height: 100%; // allow textareas
+        padding: $form-floating-padding-y $form-floating-padding-x;
+        overflow: hidden;
+        text-align: start;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        pointer-events: none;
+        border: $input-border-width solid transparent; // Required for aligning label's text with the input as it affects inner box model
+        transform-origin: 0 0;
+        margin: 0;
+        @include transition($form-floating-transition);
+    }
+
+    >.form-control,
+    >.form-control-plaintext {
+        padding: $form-floating-padding-y $form-floating-padding-x;
+
+        &::placeholder {
+            color: transparent;
+        }
+
+        &:focus,
+        &:not(:placeholder-shown) {
+            padding-top: $form-floating-input-padding-t;
+            padding-bottom: $form-floating-input-padding-b;
+        }
+
+        // Duplicated because `:-webkit-autofill` invalidates other selectors when grouped
+        &:-webkit-autofill {
+            padding-top: $form-floating-input-padding-t;
+            padding-bottom: $form-floating-input-padding-b;
+        }
+    }
+
+    >.form-select {
+        padding-top: $form-floating-input-padding-t;
+        padding-bottom: $form-floating-input-padding-b;
+    }
+
+    >.form-control:focus,
+    >.form-control:not(:placeholder-shown),
+    >.form-control-plaintext,
+    >.form-select {
+        ~label {
+            color: rgba(var(--#{$prefix}body-color-rgb), #{$form-floating-label-opacity});
+            transform: $form-floating-label-transform;
+
+            
+    }
+
+}
+
+// Duplicated because `:-webkit-autofill` invalidates other selectors when grouped
+>.form-control:-webkit-autofill {
+    ~label {
+        color: rgba(var(--#{$prefix}body-color-rgb), #{$form-floating-label-opacity});
+        transform: $form-floating-label-transform;
+    }
+}
+
+>.form-control-plaintext {
+    ~label {
+        border-width: $input-border-width 0; // Required to properly position label text - as explained above
+    }
+}
+
+> :disabled~label,
+>.form-control:disabled~label {
+    // Required for `.form-control`s because of specificity
+    color: $form-floating-label-disabled-color;
+
+    &::after {
+        background-color: $input-disabled-bg;
+    }
+}
+}
+
+.form-floating{
+    textarea.form-control{
+        resize: none;
+        overflow: hidden;
+        min-height: 100px;
+    }
+}
+
+.form-control.is-invalid{
+    border: 1px solid #dc3545;
+}
+
+.form-control.is-valid{
+    border: 1px solid #28a745;
+}
